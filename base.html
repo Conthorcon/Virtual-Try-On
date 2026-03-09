@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Virtual Try-On</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>👕 AI Virtual Try-On</h1>
+    <p class="subtitle">Thử quần áo bằng trí tuệ nhân tạo</p>
+
+    <div class="tryon-area">
+
+        <!-- ===== Person ===== -->
+        <div class="card">
+            <h3>Ảnh người</h3>
+            <label class="upload-box">
+                <input type="file" id="personInput" accept="image/*">
+                <img id="personPreview" alt="Person preview">
+                <span>Chọn ảnh</span>
+            </label>
+        </div>
+
+        <!-- ===== Cloth ===== -->
+        <div class="card">
+            <h3>Quần áo tham chiếu</h3>
+            <label class="upload-box">
+                <input type="file" id="clothInput" accept="image/*">
+                <img id="clothPreview" alt="Cloth preview">
+                <span>Chọn ảnh</span>
+            </label>
+        </div>
+
+        <!-- ===== Segmentation ===== -->
+        <div class="card">
+            <h3>Ảnh inpaint</h3>
+            <div class="result-box">
+                <img id="segmentationImage" class="seg-img" alt="Cloth segmentation">
+            </div>
+        </div>
+
+        <!-- ===== Result ===== -->
+        <div class="card">
+            <h3>Kết quả</h3>
+
+            <div class="result-box result-relative">
+                <img id="resultImage" alt="Try-on result">
+
+                <!-- Action buttons -->
+                <div class="result-actions" id="resultActions">
+
+                    <div class="icon-btn">
+                        <button id="downloadBtn" aria-label="Download result">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"
+                                 stroke="currentColor" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                        </button>
+                        <span class="tooltip">Tải ảnh</span>
+                    </div>
+
+                    <div class="icon-btn">
+                        <button id="resetBtn" aria-label="Reset result">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"
+                                 stroke="currentColor" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"/>
+                                <line x1="6" y1="6" x2="18" y2="18"/>
+                            </svg>
+                        </button>
+                        <span class="tooltip">Xóa ảnh</span>
+                    </div>
+
+                </div>
+
+                <!-- Spinner -->
+                <div class="spinner-wrapper" id="loadingSpinner">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Try-On Button -->
+    <button class="tryon-btn" id="tryonBtn">✨ Try On</button>
+</div>
+
+<!-- Main JS -->
+<script src="/static/script.js"></script>
+
+</body>
+</html>

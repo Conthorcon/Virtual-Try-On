@@ -1,0 +1,8 @@
+MODEL:
+  fine_width: 192
+  fine_height: 256
+  radius: 5
+  grid_size: 5
+
+  gmm_checkpoint: checkpoints/GMM/gmm_final.pth
+  tom_checkpoint: checkpoints/TOM/tom_final.pth

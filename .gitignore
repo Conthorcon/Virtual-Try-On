@@ -1,0 +1,12 @@
+Dockerfile
+ckpt
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+.pytest_cache
+.idea
+test.py
+test_data
+.vscode
+proc.py
