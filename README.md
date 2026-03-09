@@ -7,7 +7,7 @@
 - [x] Preprocess data using OpenPose and human parsing
 - [x] Integrate the CP-VTON model for the cloth warping stage
 - [x] Integrate the MV-VTON (Frontal View) model for the try-on stage
-- [x] Deploy the Virtual Try-On system on Google Cloud
+- [] Deploy the Virtual Try-On system on Google Cloud
 
 ## Setup
 
@@ -35,6 +35,13 @@ The checkpoints can be obtained from the reference repositories.
 ## Deploy Local Website
 
     python app.py
+
+<p align='center'>
+    <img src='asset/ui.png'>
+    <em>
+    Simple user interface for Virtual Try-On.
+    </em>
+</p>
 
 This repository includes a Dockerfile for deployment on Google Cloud.
 
