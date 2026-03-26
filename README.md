@@ -7,7 +7,7 @@
 - [x] Preprocess data using OpenPose and human parsing
 - [x] Integrate the CP-VTON model for the cloth warping stage
 - [x] Integrate the MV-VTON (Frontal View) model for the try-on stage
-- [ ] Deploy the Virtual Try-On system on Google Cloud
+- [x] Deploy the Virtual Try-On system on Google Cloud
 
 ## Setup
 
