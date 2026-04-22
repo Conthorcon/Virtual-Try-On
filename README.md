@@ -1,6 +1,6 @@
   #  Virtual Try-On (CP-VTON + MV-VTON) on Google Cloud
-
-> Updated Date: 3/7/2026
+[![Demo](https://img.shields.io/badge/Demo-Try%20Now-blue?style=for-the-badge&logo=google-chrome)](https://tryon-app-6121510481.asia-southeast1.run.app)
+> Updated Date: 23/4/2026
 
 ## TODO
 
